@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        font-family: monospace;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CacaProut2000ProMaxDeluxe</h1><br>
+    <h2>CacaProut2000ProMaxDeluxe C'est mieux que le collège Rimbaud car le nom est trop stylé !</h2><br>
+    <button id="button">Cliquez pour approuver</button>
+    <span id="span"></span>
+    <script>
+      const button = document.getElementById("button");
+      const span = document.getElementById("span");
+      let clicks = 0
+
+      button.addEventListener("click", () => {
+        clicks +=  1;
+        span.hinnerHTML = toString(clicks) + " ont approuvé cet affirmation !"
+      });
+    </script>
+  </body>
+</html>
